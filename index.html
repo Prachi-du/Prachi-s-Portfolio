@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prachi - CSE Student Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(0, 0, 33);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(86, 86, 168);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    nav ul li a:hover {
+      color: rgb(200, 200, 211);
+      font-size: 1.04rem;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    main hr {
+      border: 0;
+      background: #9c97f1;
+      height: 1.2px;
+      margin: 60px 84px;
+    }
+
+    .left {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .firstsection {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 100px 0;
+      flex-wrap: wrap;
+    }
+
+    .firstsection > div {
+      width: 40%;
+    }
+
+    .leftsection {
+      font-size: 2rem;
+      line-height: 1.5;
+    }
+
+    .rightsection img {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .purple {
+      color: blueviolet;
+    }
+
+    .text-gray {
+      color: gray;
+    }
+
+    #element {
+      color: blueviolet;
+    }
+
+    .secondsection {
+      max-width: 90vw;
+      margin: auto;
+      padding-bottom: 160px; /* Ensures space for footer */
+    }
+
+    .secondsection h1 {
+      font-size: 1.9rem;
+    }
+
+    .box {
+      width: 100%;
+      margin: 56px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .vertical {
+      width: 1px;
+      background-color: white;
+      margin: 0 100px;
+      position: relative;
+    }
+
+    .image-top {
+      width: 23px;
+      position: absolute;
+      top: -32px;
+      left: -11px;
+    }
+
+    .vertical-title {
+      position: absolute;
+      top: 85px;
+      width: 150px;
+      font-weight: bold;
+    }
+
+    .vertical-desc {
+      position: relative;
+      top: 140px;
+      color: gray;
+      width: 150px;
+      font-size: 0.8rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      .firstsection {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .firstsection > div {
+        width: 80%;
+      }
+
+      .box {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+      }
+
+      .vertical {
+        margin: 40px 0;
+      }
+
+      .vertical-title, .vertical-desc {
+        position: relative;
+        top: 0;
+        left: 0;
+        text-align: center;
+      }
+    }
+
+    footer {
+      background-color: #0e0e1a;
+      color: white;
+      padding: 40px 20px 20px;
+      text-align: center;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .footer ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer ul li {
+      margin: 8px 0;
+      word-wrap: break-word;
+    }
+
+    .footer h3 {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left">Prachi's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Skills</a></li>
+          <li><a href="/">Projects</a></li>
+          <li><a href="/">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="firstsection">
+      <div class="leftsection">
+        Hi, I'm <span class="purple">Prachi</span><br />
+        a B.Tech CSE Student <br /> who is
+        passionate about <span id="element">Web Development</span>
+      </div>
+      <div class="rightsection">
+        <img src="bg.png" alt="Developer illustration" />
+      </div>
+    </section>
+
+    <hr />
+
+    <section class="secondsection">
+      <span class="text-gray">My Journey So Far</span>
+      <h1>Experience & Projects</h1>
+
+      <div class="box">
+        <div class="vertical">
+          <img class="image-top" src="developer.png" alt="">
+          <div class="vertical-title">Web Dev Intern<br>(2023)</div>
+          <div class="vertical-desc">Worked on a student portal website using HTML, CSS, JS at a local startup.</div>
+        </div>
+
+        <div class="vertical">
+          <img class="image-top" src="developer.png" alt="">
+          <div class="vertical-title">Python Project<br>(2023)</div>
+          <div class="vertical-desc">Developed a hospital prescription generator in Python as part of an AI course project.</div>
+        </div>
+
+        <div class="vertical">
+          <img class="image-top" src="developer.png" alt="">
+          <div class="vertical-title">ML Mini Project<br>(2024)</div>
+          <div class="vertical-desc">Built a simple ML model to predict student marks using scikit-learn and pandas.</div>
+        </div>
+
+        <div class="vertical">
+          <img class="image-top" src="developer.png" alt="">
+          <div class="vertical-title">React Project<br>(2024)</div>
+          <div class="vertical-desc">Created a personal portfolio website using React.js, TailwindCSS, and deployed on Netlify.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div class="footer-first">
+        <h3>Prachi's Developer Portfolio</h3>
+        <p>Thanks for visiting!</p>
+      </div>
+      <div class="footer-second">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="https://github.com/Prachi-du" target="_blank" style="color:white;">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/prachi-dubey-a10375258" target="_blank" style="color:white;">LinkedIn</a></li>
+          <li><a href="mailto:prachidu708@gmail.com" target="_blank" style="color:white;">Email</a></li>
+          <li><a href="https://github.com/Prachi-du/hospital-prescription-generator" target="_blank" style="color:white;">Prescription Generator Project</a></li>
+        </ul>
+      </div>
+      
+    </div>
+    <p style="margin-top: 20px;">&copy; 2025 Prachi. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Development', 'UI/UX Design', 'Python Programming', 'React Projects'],
+      typeSpeed: 50,
+      backSpeed: 50,
+      loop: true
+    });
+  </script>
+</body>
+</html>
